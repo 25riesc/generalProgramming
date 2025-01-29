@@ -88,19 +88,45 @@ let coat = 0
 //t-shirt & shorts (>75), t-shirt & pants (60-75), long sleeve & pants (>45), 
 // sweatshirt and pants (<45), raincoat (if raining, instead of top)
 
-if(precipitation=true){
-    coat= `raincoat`
-} else if(precipitation=false){
-    coat= `no coat`
-} else {console.log('error, undf precip')}
+// if(precipitation=true){
+//     coat= `raincoat`
+// } else if(precipitation=false){
+//     coat= `no coat`
+// } else {console.log('error, undf precip')}
 
-if (temperature > 75){
-    console.log(`${temperature} = t-shirt & shorts, ${coat}`)
-} else if (temperature > 60){
-    console.log(`${temperature} = t-shirt & pants, ${coat}`)
-} else if(temperature > 45){
-    console.log(`${temperature} = long sleeve & pants, ${coat}`)
-} else {
-    console.log(`${temperature} = sweatshirt & pants, ${coat}`)
-} 
+// if (temperature > 75){
+//     console.log(`${temperature} = t-shirt & shorts, ${coat}`)
+// } else if (temperature > 60){
+//     console.log(`${temperature} = t-shirt & pants, ${coat}`)
+// } else if(temperature > 45){
+//     console.log(`${temperature} = long sleeve & pants, ${coat}`)
+// } else {
+//     console.log(`${temperature} = sweatshirt & pants, ${coat}`)
+// } 
 
+//beware: you must restate your checked value each time
+//this wont work: (x==35||15)
+//will: (x==35||x=-15)
+
+/*javascript uses truthy and falsey values
+a truthy value will be treated the same as true
+the following values are truthy:
+-true, any not empty string (inc "false"), any 3 other than 0, arrays, functions, and objects
+falsey:
+-false, 0 or 0n (big int), empty string, Null, und, NaN
+OR - finds the first truthy value
+ex. */
+let testVariable=null||1||false;
+console.log(testVariable);
+let testVariable2=null||0||false;
+console.log(testVariable2);
+/* useful if you have a form that you need a person to fill out
+let name=USER_IMPUT || "Unknown name"
+
+can also be used to set up conditional alerts or functions
+ex. 
+let printSuccess=true
+printSuccess || alert ("did not print")
+!printSuccess || alert ("success")
+
+AND
