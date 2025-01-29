@@ -44,3 +44,4 @@
 //name can only contain letters, digits, or $ or _
 //first character cannot be a digit
 //cannot be reserved words (no let, const, console.log)
+*/
