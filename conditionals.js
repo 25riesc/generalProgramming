@@ -82,9 +82,9 @@ if(testNumber>90){
 
 //clothing selector based on weather
 //two variables: temp & precipitation
-let temperature = 30
-let precipitation = true
-let coat = 0
+// let temperature = 30
+// let precipitation = true
+// let coat = 0
 //t-shirt & shorts (>75), t-shirt & pants (60-75), long sleeve & pants (>45), 
 // sweatshirt and pants (<45), raincoat (if raining, instead of top)
 
@@ -116,10 +116,10 @@ falsey:
 -false, 0 or 0n (big int), empty string, Null, und, NaN
 OR - finds the first truthy value
 ex. */
-let testVariable=null||1||false;
-console.log(testVariable);
-let testVariable2=null||0||false;
-console.log(testVariable2);
+// let testVariable=null||1||false;
+// console.log(testVariable);
+// let testVariable2=null||0||false;
+// console.log(testVariable2);
 /* useful if you have a form that you need a person to fill out
 let name=USER_IMPUT || "Unknown name"
 
@@ -129,4 +129,82 @@ let printSuccess=true
 printSuccess || alert ("did not print")
 !printSuccess || alert ("success")
 
-AND
+AND && finds the first falsey value
+evaluate from left-right
+converts to boolean
+stops when it gets to first falsey value
+if no values r falsey, returns last value */
+// console.log(true && true && true);
+// console.log(true && 0 && true);
+// console.log(true && "false" && 3.14);
+
+//precedence - order in which things happen
+//&& is higher precedence than ||
+//a && b || c
+//if you want or to combine b c
+// a && (b||c) && d
+//dont do this 
+// some people use && instead of if
+// let x=1;
+// (x>0) && alert("greater then 0");
+//if statements are much more readable
+/* NOT !
+! takes a single argument and does the following
+- converts the favue to boolean
+- returns the opposite of the result
+*/
+console.log(!NaN)
+console.log(!1)
+//some people will use !! to convert to boolean
+console.log(!!NaN)
+//you can use this same operation with
+console.log(Boolean(NaN))
+/* if we have a lot of possible test cases we wanna check, its often better to use a switch instead of an if
+structure:
+switch(example){
+case x:
+    code goes here
+    break;
+case y:
+    code goes here
+    break;
+case z:
+    code goes here
+    break;
+default:
+    code goes here
+    break;
+}
+    the switch expression is evaluated
+    if match, the code is executed
+    if there is no match, default is execued
+
+gitDay() method - weekday
+number between 0-6
+an actual "day"
+*/
+console.log(new Date)
+switch(new Date().gitDay()){
+    case 0:
+        console.log ("sunday");
+        break;
+    case 1:
+        console.log ("monday");
+        break;
+     case 2:
+        console.log ("tuesday");
+        break;
+    case 3:
+        console.log ("wednesday");
+        break;
+    case 4:
+        console.log ("thursday");
+        break;
+     case 5:
+        console.log ("friday");
+        break;
+     case 6:
+        console.log ("saturday");
+        break;
+}
+console.log(day)
