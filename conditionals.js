@@ -150,17 +150,17 @@ if no values r falsey, returns last value */
 //if statements are much more readable
 /* NOT !
 ! takes a single argument and does the following
-- converts the favue to boolean
+- converts the value to boolean
 - returns the opposite of the result
 */
-console.log(!NaN)
-console.log(!1)
-//some people will use !! to convert to boolean
-console.log(!!NaN)
-//you can use this same operation with
-console.log(Boolean(NaN))
+// console.log(!NaN)
+// console.log(!1)
+// //some people will use !! to convert to boolean
+// console.log(!!NaN)
+// //you can use this same operation with
+// console.log(Boolean(NaN))
 /* if we have a lot of possible test cases we wanna check, its often better to use a switch instead of an if
-structure:
+//structure:
 switch(example){
 case x:
     code goes here
@@ -175,36 +175,39 @@ default:
     code goes here
     break;
 }
-    the switch expression is evaluated
-    if match, the code is executed
-    if there is no match, default is execued
+the switch expression is evaluated
+if match, the code is executed
+if there is no match, default is execued
 
 gitDay() method - weekday
 number between 0-6
 an actual "day"
 */
+/*
 console.log(new Date)
-switch(new Date().gitDay()){
+switch(new Date().getDay()){
     case 0:
-        console.log ("sunday");
-        break;
+            console.log ("sunday");
+            break;
     case 1:
-        console.log ("monday");
-        break;
+         console.log ("monday");
+         break;
      case 2:
-        console.log ("tuesday");
-        break;
+            console.log ("tuesday");
+            break;
     case 3:
-        console.log ("wednesday");
-        break;
+         console.log ("wednesday");
+            break;
     case 4:
-        console.log ("thursday");
-        break;
+         console.log ("thursday");
+         break;
      case 5:
-        console.log ("friday");
-        break;
+          console.log ("friday");
+         break;
      case 6:
-        console.log ("saturday");
-        break;
+         console.log ("saturday");
+         break;
 }
 console.log(day)
+*/
+
