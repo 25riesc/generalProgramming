@@ -49,3 +49,7 @@ min(2,1)
 // 7. Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
 // pow(3, 2) = 3 * 3 = 9
 // *this function only needs to handle positive integers*
+function pow(x,n){
+    console.log(x**n) 
+}
+pow(5,3)
