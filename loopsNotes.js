@@ -1,0 +1,1 @@
+/* notes on loops on js
